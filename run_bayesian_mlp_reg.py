@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from keras.regularizers import L1L2
-import bayesian_lstm_reg as nn
+import bayesian_mlp_reg as nn
 import os 
 import keras
 from keras.models import model_from_yaml
@@ -12,7 +12,7 @@ from keras.models import model_from_yaml
 
 # Load dataset
 directory = os.path.dirname(os.path.abspath(__file__))
-file = '/data/TRAIN_EURUSD_Candlestick_60_M_MID_01.01.2004-30.06.2018_gbp_cad.csv'
+file = '/data/TRAIN_EURUSD_Candlestick_10_M_MID_01.07.2003-31.12.2014.csv'
 path = directory + file
 # path = '/Users/jan/Desktop/intraday_data/stats_@ES#C_60m.csv'
 output_dir = directory +'/output/'#output directory. 
@@ -22,24 +22,24 @@ dataset = pd.read_csv(path, header=0, index_col=0)
 #remove index
 dataset.reset_index(drop=True, inplace=True)
 dataset.columns = range(1,len(dataset.columns)+1)
-periods_in_year = 250*24#*6#*24*6#*52*24*6#330756#for annualization of Sharpe and CAGR
+periods_in_year = 250*24*6#for annualization of Sharpe and CAGR
 
 
 #HYPERPARAMETERS
 #Define hyperparameters. If list, grid search is performed over them to find best value
 train_pct = 0.5 #as a percentage of the whole dataset length
-n_lags = [5]#lookback window length
+n_lags = [1]#lookback window length
 n_features = len(dataset.columns) # How many features are there?
 # List of **differenced** epochs. For specific value, for example 300, set to [300].
 # If you want to test 300 and 600 epochs set to [300, 300]. (600=300+300)
-n_epochs = [1]
+n_epochs = [100]
 n_batch = [1024]# Batch size
-n_neurons = [1]# List of number of neurons for each layer. 
-n_hidden_dense_layers = [1]# >=0
-bias_regularizers = [L1L2(l1=0.0, l2=0.0)]
+n_neurons = [100]# List of number of neurons for each layer. 
+n_hidden_dense_layers = [3]# >=0
+bias_regularizers = [L1L2(l1=0.00, l2=0.00)]
 kernel_regularizers = [L1L2(l1=0.00, l2=0.00)]
-recurrent_regularizers = [L1L2(l1=0.0, l2=0.0)]# only applicable for recurrent layers 
-learning_rates = [0.00100]#, 0.001, 0.005] 
+recurrent_regularizers = [L1L2(l1=0.00, l2=0.00)]# only applicable for recurrent layers 
+learning_rates = [0.001]#, 0.001, 0.005] 
 learning_rate_decay = [0.00]#, 0.00, 0.005]#for adam optimization only
 dropout = [0.5]
 # at what return is profit taken in period. #the price has to be strictly higher (lower) 
@@ -50,7 +50,7 @@ return_threshold = [np.nan]# set to np.nan for dynamic profit taking according t
 # $ predicted return threshold above which a position is taken in (1 per 100000)
 threshold = [0,4,8,20,50,100,150,200]
 bayesian_threshold = [0,0.1,0.4,1,2,4,8,16,32]
-p_out = [5]#*3#12*6#how many periods out do you want to perdict?
+p_out = [6]#*3#12*6#how many periods out do you want to perdict?
 plot=False
 
 

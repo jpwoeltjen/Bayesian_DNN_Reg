@@ -1,0 +1,331 @@
+backend: tensorflow
+class_name: Sequential
+config:
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    batch_input_shape: !!python/tuple [null, 50]
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    dtype: float32
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_1
+    scale: true
+    trainable: true
+- class_name: Dense
+  config:
+    activation: linear
+    activity_regularizer: null
+    bias_constraint: null
+    bias_initializer:
+      class_name: Zeros
+      config: {}
+    bias_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    kernel_constraint: null
+    kernel_initializer:
+      class_name: VarianceScaling
+      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}
+    kernel_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    name: dense_1
+    trainable: true
+    units: 100
+    use_bias: true
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_2
+    scale: true
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_1, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_1, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+- class_name: Dense
+  config:
+    activation: linear
+    activity_regularizer: null
+    bias_constraint: null
+    bias_initializer:
+      class_name: Zeros
+      config: {}
+    bias_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    kernel_constraint: null
+    kernel_initializer:
+      class_name: VarianceScaling
+      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}
+    kernel_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    name: dense_2
+    trainable: true
+    units: 100
+    use_bias: true
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_3
+    scale: true
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_2, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_2, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+- class_name: Dense
+  config:
+    activation: linear
+    activity_regularizer: null
+    bias_constraint: null
+    bias_initializer:
+      class_name: Zeros
+      config: {}
+    bias_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    kernel_constraint: null
+    kernel_initializer:
+      class_name: VarianceScaling
+      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}
+    kernel_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    name: dense_3
+    trainable: true
+    units: 100
+    use_bias: true
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_4
+    scale: true
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_3, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_3, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+- class_name: Dense
+  config:
+    activation: linear
+    activity_regularizer: null
+    bias_constraint: null
+    bias_initializer:
+      class_name: Zeros
+      config: {}
+    bias_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    kernel_constraint: null
+    kernel_initializer:
+      class_name: VarianceScaling
+      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}
+    kernel_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    name: dense_4
+    trainable: true
+    units: 100
+    use_bias: true
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_5
+    scale: true
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_4, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_4, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+- class_name: Dense
+  config:
+    activation: linear
+    activity_regularizer: null
+    bias_constraint: null
+    bias_initializer:
+      class_name: Zeros
+      config: {}
+    bias_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    kernel_constraint: null
+    kernel_initializer:
+      class_name: VarianceScaling
+      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}
+    kernel_regularizer:
+      class_name: L1L2
+      config: {l1: 0.0, l2: 0.0}
+    name: dense_5
+    trainable: true
+    units: 100
+    use_bias: true
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_6
+    scale: true
+    trainable: true
+- class_name: Activation
+  config: {activation: relu, name: activation_5, trainable: true}
+- class_name: Dropout
+  config: {name: dropout_5, noise_shape: null, rate: 0.5, seed: null, trainable: true}
+- class_name: Dense
+  config:
+    activation: linear
+    activity_regularizer: null
+    bias_constraint: null
+    bias_initializer:
+      class_name: Zeros
+      config: {}
+    bias_regularizer: null
+    kernel_constraint: null
+    kernel_initializer:
+      class_name: VarianceScaling
+      config: {distribution: uniform, mode: fan_avg, scale: 1.0, seed: null}
+    kernel_regularizer: null
+    name: dense_6
+    trainable: true
+    units: 1
+    use_bias: true
+- class_name: BatchNormalization
+  config:
+    axis: -1
+    beta_constraint: null
+    beta_initializer:
+      class_name: Zeros
+      config: {}
+    beta_regularizer: null
+    center: true
+    epsilon: 0.001
+    gamma_constraint: null
+    gamma_initializer:
+      class_name: Ones
+      config: {}
+    gamma_regularizer: null
+    momentum: 0.99
+    moving_mean_initializer:
+      class_name: Zeros
+      config: {}
+    moving_variance_initializer:
+      class_name: Ones
+      config: {}
+    name: batch_normalization_7
+    scale: true
+    trainable: true
+- class_name: Activation
+  config: {activation: linear, name: activation_6, trainable: true}
+keras_version: 2.1.2

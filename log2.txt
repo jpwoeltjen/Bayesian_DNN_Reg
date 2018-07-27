@@ -1,0 +1,1001 @@
+Using TensorFlow backend.
+         var1      var2      var3    ...     return_min  return_max    return
+145 -0.000056  0.000022 -0.000407    ...      -0.000342    0.000099  0.000000
+146  0.000099 -0.000065  0.000299    ...      -0.000229    0.000571  0.000000
+147 -0.000087  0.000385  0.000026    ...      -0.000890    0.000009  0.000000
+148  0.000683  0.000121  0.000022    ...      -0.000528    0.000121  0.000000
+149 -0.000692 -0.000579 -0.000329    ...      -0.000428    0.000069 -0.000779
+150 -0.000649 -0.000701 -0.000550    ...      -0.000264    0.000528 -0.000667
+151 -0.000113  0.000346  0.000052    ...      -0.000069    0.000247  0.000598
+152 -0.000225 -0.000506 -0.000030    ...      -0.000286    0.000242 -0.000792
+153  0.000095  0.000091 -0.000121    ...      -0.000459    0.000303  0.000727
+154 -0.000078 -0.000017 -0.000251    ...      -0.000078    0.000364 -0.000740
+
+[10 rows x 54 columns]
+Train on 213866 samples, validate on 213866 samples
+2018-07-27 20:07:27.922942: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-07-27 20:07:27.922978: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-07-27 20:07:27.922986: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-07-27 20:07:27.922992: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Epoch 1/100
+ - 7s - loss: 1.7980 - val_loss: 1.0603
+Epoch 2/100
+ - 6s - loss: 1.4724 - val_loss: 1.0935
+Epoch 3/100
+ - 6s - loss: 1.2642 - val_loss: 0.9837
+Epoch 4/100
+ - 6s - loss: 1.1415 - val_loss: 0.9155
+Epoch 5/100
+ - 7s - loss: 1.0693 - val_loss: 0.8782
+Epoch 6/100
+ - 7s - loss: 1.0283 - val_loss: 0.8601
+Epoch 7/100
+ - 6s - loss: 1.0087 - val_loss: 0.8521
+Epoch 8/100
+ - 7s - loss: 1.0007 - val_loss: 0.8485
+Epoch 9/100
+ - 6s - loss: 0.9979 - val_loss: 0.8469
+Epoch 10/100
+ - 6s - loss: 0.9965 - val_loss: 0.8464
+Epoch 11/100
+ - 7s - loss: 0.9964 - val_loss: 0.8462
+Epoch 12/100
+ - 7s - loss: 0.9965 - val_loss: 0.8461
+Epoch 13/100
+ - 6s - loss: 0.9964 - val_loss: 0.8460
+Epoch 14/100
+ - 7s - loss: 0.9961 - val_loss: 0.8460
+Epoch 15/100
+ - 6s - loss: 0.9960 - val_loss: 0.8459
+Epoch 16/100
+ - 7s - loss: 0.9959 - val_loss: 0.8460
+Epoch 17/100
+ - 7s - loss: 0.9960 - val_loss: 0.8460
+Epoch 18/100
+ - 6s - loss: 0.9954 - val_loss: 0.8462
+Epoch 19/100
+ - 7s - loss: 0.9954 - val_loss: 0.8460
+Epoch 20/100
+ - 7s - loss: 0.9951 - val_loss: 0.8462
+Epoch 21/100
+ - 7s - loss: 0.9948 - val_loss: 0.8460
+Epoch 22/100
+ - 7s - loss: 0.9943 - val_loss: 0.8460
+Epoch 23/100
+ - 7s - loss: 0.9943 - val_loss: 0.8458
+Epoch 24/100
+ - 7s - loss: 0.9938 - val_loss: 0.8458
+Epoch 25/100
+ - 7s - loss: 0.9939 - val_loss: 0.8460
+Epoch 26/100
+ - 7s - loss: 0.9933 - val_loss: 0.8463
+Epoch 27/100
+ - 7s - loss: 0.9925 - val_loss: 0.8471
+Epoch 28/100
+ - 7s - loss: 0.9920 - val_loss: 0.8465
+Epoch 29/100
+ - 7s - loss: 0.9919 - val_loss: 0.8460
+Epoch 30/100
+ - 7s - loss: 0.9909 - val_loss: 0.8461
+Epoch 31/100
+ - 7s - loss: 0.9910 - val_loss: 0.8470
+Epoch 32/100
+ - 7s - loss: 0.9902 - val_loss: 0.8469
+Epoch 33/100
+ - 7s - loss: 0.9894 - val_loss: 0.8479
+Epoch 34/100
+ - 7s - loss: 0.9902 - val_loss: 0.8469
+Epoch 35/100
+ - 7s - loss: 0.9897 - val_loss: 0.8471
+Epoch 36/100
+ - 7s - loss: 0.9893 - val_loss: 0.8465
+Epoch 37/100
+ - 7s - loss: 0.9886 - val_loss: 0.8470
+Epoch 38/100
+ - 7s - loss: 0.9869 - val_loss: 0.8467
+Epoch 39/100
+ - 7s - loss: 0.9877 - val_loss: 0.8467
+Epoch 40/100
+ - 7s - loss: 0.9873 - val_loss: 0.8474
+Epoch 41/100
+ - 7s - loss: 0.9866 - val_loss: 0.8471
+Epoch 42/100
+ - 7s - loss: 0.9853 - val_loss: 0.8468
+Epoch 43/100
+ - 7s - loss: 0.9851 - val_loss: 0.8474
+Epoch 44/100
+ - 7s - loss: 0.9847 - val_loss: 0.8476
+Epoch 45/100
+ - 7s - loss: 0.9832 - val_loss: 0.8482
+Epoch 46/100
+ - 7s - loss: 0.9845 - val_loss: 0.8468
+Epoch 47/100
+ - 7s - loss: 0.9822 - val_loss: 0.8472
+Epoch 48/100
+ - 7s - loss: 0.9826 - val_loss: 0.8482
+Epoch 49/100
+ - 7s - loss: 0.9821 - val_loss: 0.8479
+Epoch 50/100
+ - 7s - loss: 0.9825 - val_loss: 0.8476
+Epoch 51/100
+ - 7s - loss: 0.9820 - val_loss: 0.8475
+Epoch 52/100
+ - 7s - loss: 0.9804 - val_loss: 0.8477
+Epoch 53/100
+ - 7s - loss: 0.9792 - val_loss: 0.8474
+Epoch 54/100
+ - 7s - loss: 0.9791 - val_loss: 0.8478
+Epoch 55/100
+ - 7s - loss: 0.9792 - val_loss: 0.8470
+Epoch 56/100
+ - 7s - loss: 0.9804 - val_loss: 0.8476
+Epoch 57/100
+ - 7s - loss: 0.9784 - val_loss: 0.8479
+Epoch 58/100
+ - 7s - loss: 0.9784 - val_loss: 0.8477
+Epoch 59/100
+ - 7s - loss: 0.9781 - val_loss: 0.8474
+Epoch 60/100
+ - 7s - loss: 0.9791 - val_loss: 0.8471
+Epoch 61/100
+ - 7s - loss: 0.9777 - val_loss: 0.8474
+Epoch 62/100
+ - 7s - loss: 0.9766 - val_loss: 0.8479
+Epoch 63/100
+ - 7s - loss: 0.9753 - val_loss: 0.8475
+Epoch 64/100
+ - 7s - loss: 0.9751 - val_loss: 0.8481
+Epoch 65/100
+ - 7s - loss: 0.9735 - val_loss: 0.8474
+Epoch 66/100
+ - 7s - loss: 0.9742 - val_loss: 0.8478
+Epoch 67/100
+ - 7s - loss: 0.9739 - val_loss: 0.8487
+Epoch 68/100
+ - 7s - loss: 0.9733 - val_loss: 0.8484
+Epoch 69/100
+ - 7s - loss: 0.9737 - val_loss: 0.8481
+Epoch 70/100
+ - 7s - loss: 0.9726 - val_loss: 0.8476
+Epoch 71/100
+ - 7s - loss: 0.9735 - val_loss: 0.8477
+Epoch 72/100
+ - 7s - loss: 0.9718 - val_loss: 0.8478
+Epoch 73/100
+ - 7s - loss: 0.9712 - val_loss: 0.8486
+Epoch 74/100
+ - 7s - loss: 0.9709 - val_loss: 0.8481
+Epoch 75/100
+ - 7s - loss: 0.9713 - val_loss: 0.8487
+Epoch 76/100
+ - 7s - loss: 0.9732 - val_loss: 0.8489
+Epoch 77/100
+ - 7s - loss: 0.9704 - val_loss: 0.8480
+Epoch 78/100
+ - 7s - loss: 0.9698 - val_loss: 0.8491
+Epoch 79/100
+ - 7s - loss: 0.9702 - val_loss: 0.8483
+Epoch 80/100
+ - 7s - loss: 0.9703 - val_loss: 0.8478
+Epoch 81/100
+ - 7s - loss: 0.9684 - val_loss: 0.8473
+Epoch 82/100
+ - 7s - loss: 0.9679 - val_loss: 0.8477
+Epoch 83/100
+ - 7s - loss: 0.9680 - val_loss: 0.8482
+Epoch 84/100
+ - 7s - loss: 0.9685 - val_loss: 0.8482
+Epoch 85/100
+ - 7s - loss: 0.9671 - val_loss: 0.8482
+Epoch 86/100
+ - 7s - loss: 0.9662 - val_loss: 0.8487
+Epoch 87/100
+ - 7s - loss: 0.9677 - val_loss: 0.8478
+Epoch 88/100
+ - 7s - loss: 0.9657 - val_loss: 0.8486
+Epoch 89/100
+ - 7s - loss: 0.9662 - val_loss: 0.8486
+Epoch 90/100
+ - 7s - loss: 0.9661 - val_loss: 0.8485
+Epoch 91/100
+ - 7s - loss: 0.9662 - val_loss: 0.8476
+Epoch 92/100
+ - 7s - loss: 0.9670 - val_loss: 0.8478
+Epoch 93/100
+ - 7s - loss: 0.9644 - val_loss: 0.8482
+Epoch 94/100
+ - 7s - loss: 0.9643 - val_loss: 0.8481
+Epoch 95/100
+ - 7s - loss: 0.9648 - val_loss: 0.8482
+Epoch 96/100
+ - 7s - loss: 0.9613 - val_loss: 0.8479
+Epoch 97/100
+ - 7s - loss: 0.9634 - val_loss: 0.8475
+Epoch 98/100
+ - 7s - loss: 0.9636 - val_loss: 0.8481
+Epoch 99/100
+ - 7s - loss: 0.9630 - val_loss: 0.8477
+Epoch 100/100
+ - 7s - loss: 0.9636 - val_loss: 0.8485
+>profit_taking_threshold: nan
+>dynamic_profit_taking: True
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 0  x std: 
+Win rate 0.00_sigma: 92.7052244430376 %
+Percentage of periods betting up 0.00_sigma : 41.560135786 %
+Percentage of periods betting down: 0.00_sigma  58.439864214 %
+Percentage of periods staying out of the market: 0.00_sigma  0.0 %
+
+There were 265383.0 total trades for 0.00_sigma.
+The annualised_sharpe for 0.00_sigma. is: 2.12.
+The CAGR for 0.00_sigma. is: 15.09 percent.
+The annualised_sharpe for 0.00_sigma. after commissions is: -11.23.
+The CAGR for 0.00_sigma. is: -52.90 percent. after commissions
+Average winning trade: 8.987494185921336e-05
+Average losing trade: -0.001054624769634613
+Average trade: 6.3862566556562415e-06
+Average long trade: 2.6582175900767224e-06
+Average short trade: 9.064536932381188e-06
+Average time in long trade: 1.9780423846127875
+Average time in short trade: 1.985233535712286
+
+
+Win rate 4.00_sigma: 90.10889718134666 %
+Percentage of periods betting up 4.00_sigma : 26.0438779423 %
+Percentage of periods betting down: 4.00_sigma  39.2802034919 %
+Percentage of periods staying out of the market: 4.00_sigma  34.6759185658 %
+
+There were 170451.0 total trades for 4.00_sigma.
+The annualised_sharpe for 4.00_sigma. is: 3.29.
+The CAGR for 4.00_sigma. is: 23.41 percent.
+The annualised_sharpe for 4.00_sigma. after commissions is: -5.64.
+The CAGR for 4.00_sigma. is: -30.48 percent. after commissions
+Average winning trade: 0.00013592479673279982
+Average losing trade: -0.0010886565627499444
+Average trade: 1.4800195368298712e-05
+Average long trade: 9.008797681473084e-06
+Average short trade: 1.8669780906997473e-05
+Average time in long trade: 2.202189423061712
+Average time in short trade: 2.1608831107230255
+
+
+Win rate 8.00_sigma: 87.46025399364063 %
+Percentage of periods betting up 8.00_sigma : 16.6707190484 %
+Percentage of periods betting down: 8.00_sigma  24.2913787138 %
+Percentage of periods staying out of the market: 8.00_sigma  59.0379022378 %
+
+There were 105057.0 total trades for 8.00_sigma.
+The annualised_sharpe for 8.00_sigma. is: 3.25.
+The CAGR for 8.00_sigma. is: 21.67 percent.
+The annualised_sharpe for 8.00_sigma. after commissions is: -2.58.
+The CAGR for 8.00_sigma. is: -14.58 percent. after commissions
+Average winning trade: 0.00019323571550286208
+Average losing trade: -0.0011692063045919893
+Average trade: 2.238894669905582e-05
+Average long trade: 1.0215674453952665e-05
+Average short trade: 3.065859792589713e-05
+Average time in long trade: 2.3845621554052547
+Average time in short trade: 2.299780310748854
+
+
+Win rate 20.00_sigma: 80.98579398401104 %
+Percentage of periods betting up 20.00_sigma : 7.36956786025 %
+Percentage of periods betting down: 20.00_sigma  7.09696725987 %
+Percentage of periods staying out of the market: 20.00_sigma  85.5334648799 %
+
+There were 34782.0 total trades for 20.00_sigma.
+The annualised_sharpe for 20.00_sigma. is: 2.34.
+The CAGR for 20.00_sigma. is: 12.41 percent.
+The annualised_sharpe for 20.00_sigma. after commissions is: 0.02.
+The CAGR for 20.00_sigma. is: -0.01 percent. after commissions
+Average winning trade: 0.0003770286410559591
+Average losing trade: -0.001393358835473928
+Average trade: 4.0403518987298e-05
+Average long trade: 1.857778412337857e-05
+Average short trade: 6.146218372547678e-05
+Average time in long trade: 2.6549392265193372
+Average time in short trade: 2.5810865371674665
+
+
+Win rate 50.00_sigma: 71.9242182150194 %
+Percentage of periods betting up 50.00_sigma : 2.64932247295 %
+Percentage of periods betting down: 50.00_sigma  1.3840442146 %
+Percentage of periods staying out of the market: 50.00_sigma  95.9666333124 %
+
+There were 8768.0 total trades for 50.00_sigma.
+The annualised_sharpe for 50.00_sigma. is: 1.51.
+The CAGR for 50.00_sigma. is: 5.75 percent.
+The annualised_sharpe for 50.00_sigma. after commissions is: 0.73.
+The CAGR for 50.00_sigma. is: 2.67 percent. after commissions
+Average winning trade: 0.0007503627287069191
+Average losing trade: -0.0016490697671619034
+Average trade: 7.670329708887434e-05
+Average long trade: 5.156961616187698e-05
+Average short trade: 0.00012108391928130591
+Average time in long trade: 2.921028372426508
+Average time in short trade: 2.8195324881141044
+
+
+Win rate 100.00_sigma: 63.915857605178 %
+Percentage of periods betting up 100.00_sigma : 0.852870488998 %
+Percentage of periods betting down: 100.00_sigma  0.339932481086 %
+Percentage of periods staying out of the market: 100.00_sigma  98.8071970299 %
+
+There were 2474.0 total trades for 100.00_sigma.
+The annualised_sharpe for 100.00_sigma. is: 1.12.
+The CAGR for 100.00_sigma. is: 2.92 percent.
+The annualised_sharpe for 100.00_sigma. after commissions is: 0.80.
+The CAGR for 100.00_sigma. is: 2.07 percent. after commissions
+Average winning trade: 0.0012098237068309985
+Average losing trade: -0.0017546262082783674
+Average trade: 0.00014012737823975482
+Average long trade: 8.566419267203525e-05
+Average short trade: 0.0002774490854404153
+Average time in long trade: 3.112509834775767
+Average time in short trade: 3.012784090909091
+
+
+Win rate 150.00_sigma: 57.48373101952278 %
+Percentage of periods betting up 150.00_sigma : 0.31187753079 %
+Percentage of periods betting down: 150.00_sigma  0.122506616292 %
+Percentage of periods staying out of the market: 150.00_sigma  99.5656158529 %
+
+There were 924.0 total trades for 150.00_sigma.
+The annualised_sharpe for 150.00_sigma. is: 0.59.
+The CAGR for 150.00_sigma. is: 1.13 percent.
+The annualised_sharpe for 150.00_sigma. after commissions is: 0.43.
+The CAGR for 150.00_sigma. is: 0.81 percent. after commissions
+Average winning trade: 0.0015829795391296467
+Average losing trade: -0.0017959160950195342
+Average trade: 0.0001463991827451793
+Average long trade: 3.551341437689769e-05
+Average short trade: 0.000434875439515787
+Average time in long trade: 3.24954240390482
+Average time in short trade: 3.090415913200723
+
+
+Win rate 200.00_sigma: 61.165048543689316 %
+Percentage of periods betting up 200.00_sigma : 0.134196178916 %
+Percentage of periods betting down: 200.00_sigma  0.0533044055624 %
+Percentage of periods staying out of the market: 200.00_sigma  99.8124994155 %
+
+There were 414.0 total trades for 200.00_sigma.
+The annualised_sharpe for 200.00_sigma. is: 0.95.
+The CAGR for 200.00_sigma. is: 1.27 percent.
+The annualised_sharpe for 200.00_sigma. after commissions is: 0.85.
+The CAGR for 200.00_sigma. is: 1.13 percent. after commissions
+Average winning trade: 0.0018145756217051935
+Average losing trade: -0.0019127990150821824
+Average trade: 0.00036705149091397946
+Average long trade: 0.00028368731817709624
+Average short trade: 0.0005959240378825135
+Average time in long trade: 3.2853470437017993
+Average time in short trade: 3.145748987854251
+
+
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 0.1  x std: 
+Win rate 0.00_sigma: 92.06305563193108 %
+Percentage of periods betting up 0.00_sigma : 36.9422909672 %
+Percentage of periods betting down: 0.00_sigma  53.8570880832 %
+Percentage of periods staying out of the market: 0.00_sigma  9.20062094957 %
+
+There were 240057.0 total trades for 0.00_sigma.
+The annualised_sharpe for 0.00_sigma. is: 2.45.
+The CAGR for 0.00_sigma. is: 17.52 percent.
+The annualised_sharpe for 0.00_sigma. after commissions is: -9.72.
+The CAGR for 0.00_sigma. is: -47.63 percent. after commissions
+Average winning trade: 9.981927804447064e-05
+Average losing trade: -0.0010558407669480543
+Average trade: 8.09518318941342e-06
+Average long trade: 4.2801409441168586e-06
+Average short trade: 1.0742881739074385e-05
+Average time in long trade: 2.042080989739022
+Average time in short trade: 2.030289679480119
+
+
+Win rate 4.00_sigma: 90.09613576532531 %
+Percentage of periods betting up 4.00_sigma : 25.9667268289 %
+Percentage of periods betting down: 4.00_sigma  39.2184826013 %
+Percentage of periods staying out of the market: 4.00_sigma  34.8147905698 %
+
+There were 170191.0 total trades for 4.00_sigma.
+The annualised_sharpe for 4.00_sigma. is: 3.30.
+The CAGR for 4.00_sigma. is: 23.51 percent.
+The annualised_sharpe for 4.00_sigma. after commissions is: -5.62.
+The CAGR for 4.00_sigma. is: -30.36 percent. after commissions
+Average winning trade: 0.00013611426860936734
+Average losing trade: -0.0010879808725987076
+Average trade: 1.4881547720870148e-05
+Average long trade: 9.06826758868543e-06
+Average short trade: 1.8761966608563934e-05
+Average time in long trade: 2.203279207920792
+Average time in short trade: 2.1615770454668035
+
+
+Win rate 8.00_sigma: 87.45667161848169 %
+Percentage of periods betting up 8.00_sigma : 16.6571591557 %
+Percentage of periods betting down: 8.00_sigma  24.2810918987 %
+Percentage of periods staying out of the market: 8.00_sigma  59.0617489456 %
+
+There were 105027.0 total trades for 8.00_sigma.
+The annualised_sharpe for 8.00_sigma. is: 3.25.
+The CAGR for 8.00_sigma. is: 21.64 percent.
+The annualised_sharpe for 8.00_sigma. after commissions is: -2.58.
+The CAGR for 8.00_sigma. is: -14.59 percent. after commissions
+Average winning trade: 0.00019326231936018224
+Average losing trade: -0.0011692063045919893
+Average trade: 2.2363405762707318e-05
+Average long trade: 1.0180436995286093e-05
+Average short trade: 3.063837987945582e-05
+Average time in long trade: 2.384809448326673
+Average time in short trade: 2.299925169959719
+
+
+Win rate 20.00_sigma: 80.98579398401104 %
+Percentage of periods betting up 20.00_sigma : 7.36910027774 %
+Percentage of periods betting down: 20.00_sigma  7.09649967737 %
+Percentage of periods staying out of the market: 20.00_sigma  85.5344000449 %
+
+There were 34782.0 total trades for 20.00_sigma.
+The annualised_sharpe for 20.00_sigma. is: 2.34.
+The CAGR for 20.00_sigma. is: 12.41 percent.
+The annualised_sharpe for 20.00_sigma. after commissions is: 0.02.
+The CAGR for 20.00_sigma. is: -0.01 percent. after commissions
+Average winning trade: 0.0003770286410559591
+Average losing trade: -0.001393358835473928
+Average trade: 4.0403518987298e-05
+Average long trade: 1.857778412337857e-05
+Average short trade: 6.146218372547678e-05
+Average time in long trade: 2.6549392265193372
+Average time in short trade: 2.5810865371674665
+
+
+Win rate 50.00_sigma: 71.9242182150194 %
+Percentage of periods betting up 50.00_sigma : 2.64932247295 %
+Percentage of periods betting down: 50.00_sigma  1.3840442146 %
+Percentage of periods staying out of the market: 50.00_sigma  95.9666333124 %
+
+There were 8768.0 total trades for 50.00_sigma.
+The annualised_sharpe for 50.00_sigma. is: 1.51.
+The CAGR for 50.00_sigma. is: 5.75 percent.
+The annualised_sharpe for 50.00_sigma. after commissions is: 0.73.
+The CAGR for 50.00_sigma. is: 2.67 percent. after commissions
+Average winning trade: 0.0007503627287069191
+Average losing trade: -0.0016490697671619034
+Average trade: 7.670329708887434e-05
+Average long trade: 5.156961616187698e-05
+Average short trade: 0.00012108391928130591
+Average time in long trade: 2.921028372426508
+Average time in short trade: 2.8195324881141044
+
+
+Win rate 100.00_sigma: 63.915857605178 %
+Percentage of periods betting up 100.00_sigma : 0.852870488998 %
+Percentage of periods betting down: 100.00_sigma  0.339932481086 %
+Percentage of periods staying out of the market: 100.00_sigma  98.8071970299 %
+
+There were 2474.0 total trades for 100.00_sigma.
+The annualised_sharpe for 100.00_sigma. is: 1.12.
+The CAGR for 100.00_sigma. is: 2.92 percent.
+The annualised_sharpe for 100.00_sigma. after commissions is: 0.80.
+The CAGR for 100.00_sigma. is: 2.07 percent. after commissions
+Average winning trade: 0.0012098237068309985
+Average losing trade: -0.0017546262082783674
+Average trade: 0.00014012737823975482
+Average long trade: 8.566419267203525e-05
+Average short trade: 0.0002774490854404153
+Average time in long trade: 3.112509834775767
+Average time in short trade: 3.012784090909091
+
+
+Win rate 150.00_sigma: 57.48373101952278 %
+Percentage of periods betting up 150.00_sigma : 0.31187753079 %
+Percentage of periods betting down: 150.00_sigma  0.122506616292 %
+Percentage of periods staying out of the market: 150.00_sigma  99.5656158529 %
+
+There were 924.0 total trades for 150.00_sigma.
+The annualised_sharpe for 150.00_sigma. is: 0.59.
+The CAGR for 150.00_sigma. is: 1.13 percent.
+The annualised_sharpe for 150.00_sigma. after commissions is: 0.43.
+The CAGR for 150.00_sigma. is: 0.81 percent. after commissions
+Average winning trade: 0.0015829795391296467
+Average losing trade: -0.0017959160950195342
+Average trade: 0.0001463991827451793
+Average long trade: 3.551341437689769e-05
+Average short trade: 0.000434875439515787
+Average time in long trade: 3.24954240390482
+Average time in short trade: 3.090415913200723
+
+
+Win rate 200.00_sigma: 61.165048543689316 %
+Percentage of periods betting up 200.00_sigma : 0.134196178916 %
+Percentage of periods betting down: 200.00_sigma  0.0533044055624 %
+Percentage of periods staying out of the market: 200.00_sigma  99.8124994155 %
+
+There were 414.0 total trades for 200.00_sigma.
+The annualised_sharpe for 200.00_sigma. is: 0.95.
+The CAGR for 200.00_sigma. is: 1.27 percent.
+The annualised_sharpe for 200.00_sigma. after commissions is: 0.85.
+The CAGR for 200.00_sigma. is: 1.13 percent. after commissions
+Average winning trade: 0.0018145756217051935
+Average losing trade: -0.0019127990150821824
+Average trade: 0.00036705149091397946
+Average long trade: 0.00028368731817709624
+Average short trade: 0.0005959240378825135
+Average time in long trade: 3.2853470437017993
+Average time in short trade: 3.145748987854251
+
+
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 0.4  x std: 
+Win rate 0.00_sigma: 89.9752183148454 %
+Percentage of periods betting up 0.00_sigma : 23.9088962247 %
+Percentage of periods betting down: 0.00_sigma  40.3874388636 %
+Percentage of periods staying out of the market: 0.00_sigma  35.7036649117 %
+
+There were 169495.0 total trades for 0.00_sigma.
+The annualised_sharpe for 0.00_sigma. is: 3.06.
+The CAGR for 0.00_sigma. is: 21.13 percent.
+The annualised_sharpe for 0.00_sigma. after commissions is: -6.00.
+The CAGR for 0.00_sigma. is: -31.54 percent. after commissions
+Average winning trade: 0.00013318160731056047
+Average losing trade: -0.0010599436106177235
+Average trade: 1.3573408982725038e-05
+Average long trade: 8.959648357167583e-06
+Average short trade: 1.631465476102296e-05
+Average time in long trade: 2.2372748368140765
+Average time in short trade: 2.1549831607833356
+
+
+Win rate 4.00_sigma: 89.4039043741518 %
+Percentage of periods betting up 4.00_sigma : 22.0465151076 %
+Percentage of periods betting down: 4.00_sigma  36.3419150309 %
+Percentage of periods staying out of the market: 4.00_sigma  41.6115698615 %
+
+There were 153279.0 total trades for 4.00_sigma.
+The annualised_sharpe for 4.00_sigma. is: 3.22.
+The CAGR for 4.00_sigma. is: 22.21 percent.
+The annualised_sharpe for 4.00_sigma. after commissions is: -5.03.
+The CAGR for 4.00_sigma. is: -27.06 percent. after commissions
+Average winning trade: 0.00014520936015590243
+Average losing trade: -0.0010770558711472324
+Average trade: 1.5696967445527182e-05
+Average long trade: 9.704467191236622e-06
+Average short trade: 1.9347027234214907e-05
+Average time in long trade: 2.271827613727055
+Average time in short trade: 2.1925995453877207
+
+
+Win rate 8.00_sigma: 87.02790149593561 %
+Percentage of periods betting up 8.00_sigma : 15.2913506588 %
+Percentage of periods betting down: 8.00_sigma  23.4558087775 %
+Percentage of periods staying out of the market: 8.00_sigma  61.2528405637 %
+
+There were 100153.0 total trades for 8.00_sigma.
+The annualised_sharpe for 8.00_sigma. is: 3.13.
+The CAGR for 8.00_sigma. is: 20.36 percent.
+The annualised_sharpe for 8.00_sigma. after commissions is: -2.53.
+The CAGR for 8.00_sigma. is: -14.09 percent. after commissions
+Average winning trade: 0.00019814422852226327
+Average losing trade: -0.0011582030147574338
+Average trade: 2.2197528066858196e-05
+Average long trade: 9.954134824946434e-06
+Average short trade: 3.0099204040499568e-05
+Average time in long trade: 2.420094007050529
+Average time in short trade: 2.314018812634578
+
+
+Win rate 20.00_sigma: 80.7433814505289 %
+Percentage of periods betting up 20.00_sigma : 7.15214199546 %
+Percentage of periods betting down: 20.00_sigma  6.97025240104 %
+Percentage of periods staying out of the market: 20.00_sigma  85.8776056035 %
+
+There were 34230.0 total trades for 20.00_sigma.
+The annualised_sharpe for 20.00_sigma. is: 2.30.
+The CAGR for 20.00_sigma. is: 12.11 percent.
+The annualised_sharpe for 20.00_sigma. after commissions is: 0.01.
+The CAGR for 20.00_sigma. is: -0.09 percent. after commissions
+Average winning trade: 0.0003804139134661452
+Average losing trade: -0.0013866962754496106
+Average trade: 4.012824503779987e-05
+Average long trade: 1.7618521925747626e-05
+Average short trade: 6.162719104941375e-05
+Average time in long trade: 2.666219419473143
+Average time in short trade: 2.5856413500203317
+
+
+Win rate 50.00_sigma: 71.87356848373797 %
+Percentage of periods betting up 50.00_sigma : 2.63435983279 %
+Percentage of periods betting down: 50.00_sigma  1.374224982 %
+Percentage of periods staying out of the market: 50.00_sigma  95.9914151852 %
+
+There were 8738.0 total trades for 50.00_sigma.
+The annualised_sharpe for 50.00_sigma. is: 1.58.
+The CAGR for 50.00_sigma. is: 6.00 percent.
+The annualised_sharpe for 50.00_sigma. after commissions is: 0.79.
+The CAGR for 50.00_sigma. is: 2.92 percent. after commissions
+Average winning trade: 0.0007524568984817551
+Average losing trade: -0.001637801352331366
+Average trade: 8.016254850499932e-05
+Average long trade: 5.301382499883365e-05
+Average short trade: 0.00012831962349179384
+Average time in long trade: 2.922067268252666
+Average time in short trade: 2.8183266932270916
+
+
+Win rate 100.00_sigma: 63.886639676113354 %
+Percentage of periods betting up 100.00_sigma : 0.851000158978 %
+Percentage of periods betting down: 100.00_sigma  0.339932481086 %
+Percentage of periods staying out of the market: 100.00_sigma  98.8090673599 %
+
+There were 2472.0 total trades for 100.00_sigma.
+The annualised_sharpe for 100.00_sigma. is: 1.11.
+The CAGR for 100.00_sigma. is: 2.91 percent.
+The annualised_sharpe for 100.00_sigma. after commissions is: 0.80.
+The CAGR for 100.00_sigma. is: 2.06 percent. after commissions
+Average winning trade: 0.0012104867333298571
+Average losing trade: -0.0017546262082783674
+Average trade: 0.00013968481271668456
+Average long trade: 8.498429266461501e-05
+Average short trade: 0.0002774490854404153
+Average time in long trade: 3.1133263378803777
+Average time in short trade: 3.012784090909091
+
+
+Win rate 150.00_sigma: 57.48373101952278 %
+Percentage of periods betting up 150.00_sigma : 0.31187753079 %
+Percentage of periods betting down: 150.00_sigma  0.122506616292 %
+Percentage of periods staying out of the market: 150.00_sigma  99.5656158529 %
+
+There were 924.0 total trades for 150.00_sigma.
+The annualised_sharpe for 150.00_sigma. is: 0.59.
+The CAGR for 150.00_sigma. is: 1.13 percent.
+The annualised_sharpe for 150.00_sigma. after commissions is: 0.43.
+The CAGR for 150.00_sigma. is: 0.81 percent. after commissions
+Average winning trade: 0.0015829795391296467
+Average losing trade: -0.0017959160950195342
+Average trade: 0.0001463991827451793
+Average long trade: 3.551341437689769e-05
+Average short trade: 0.000434875439515787
+Average time in long trade: 3.24954240390482
+Average time in short trade: 3.090415913200723
+
+
+Win rate 200.00_sigma: 61.165048543689316 %
+Percentage of periods betting up 200.00_sigma : 0.134196178916 %
+Percentage of periods betting down: 200.00_sigma  0.0533044055624 %
+Percentage of periods staying out of the market: 200.00_sigma  99.8124994155 %
+
+There were 414.0 total trades for 200.00_sigma.
+The annualised_sharpe for 200.00_sigma. is: 0.95.
+The CAGR for 200.00_sigma. is: 1.27 percent.
+The annualised_sharpe for 200.00_sigma. after commissions is: 0.85.
+The CAGR for 200.00_sigma. is: 1.13 percent. after commissions
+Average winning trade: 0.0018145756217051935
+Average losing trade: -0.0019127990150821824
+Average trade: 0.00036705149091397946
+Average long trade: 0.00028368731817709624
+Average short trade: 0.0005959240378825135
+Average time in long trade: 3.2853470437017993
+Average time in short trade: 3.145748987854251
+
+
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 1  x std: 
+Win rate 0.00_sigma: 84.76203729473977 %
+Percentage of periods betting up 0.00_sigma : 5.07186743101 %
+Percentage of periods betting down: 0.00_sigma  16.1886414858 %
+Percentage of periods staying out of the market: 0.00_sigma  78.7394910832 %
+
+There were 57493.0 total trades for 0.00_sigma.
+The annualised_sharpe for 0.00_sigma. is: 3.08.
+The CAGR for 0.00_sigma. is: 15.83 percent.
+The annualised_sharpe for 0.00_sigma. after commissions is: -0.95.
+The CAGR for 0.00_sigma. is: -4.55 percent. after commissions
+Average winning trade: 0.00022767901176837908
+Average losing trade: -0.001065621026339854
+Average trade: 3.060643429432975e-05
+Average long trade: 2.0348034041378137e-05
+Average short trade: 3.3779183575442136e-05
+Average time in long trade: 2.6979876576334854
+Average time in short trade: 2.393493742362311
+
+
+Win rate 4.00_sigma: 84.76044674854737 %
+Percentage of periods betting up 4.00_sigma : 5.07186743101 %
+Percentage of periods betting down: 4.00_sigma  16.1853684083 %
+Percentage of periods staying out of the market: 4.00_sigma  78.7427641607 %
+
+There were 57487.0 total trades for 4.00_sigma.
+The annualised_sharpe for 4.00_sigma. is: 3.08.
+The CAGR for 4.00_sigma. is: 15.83 percent.
+The annualised_sharpe for 4.00_sigma. after commissions is: -0.95.
+The CAGR for 4.00_sigma. is: -4.55 percent. after commissions
+Average winning trade: 0.00022770572289051682
+Average losing trade: -0.001065621026339854
+Average trade: 3.060850422627279e-05
+Average long trade: 2.0348034041378137e-05
+Average short trade: 3.3782327403141026e-05
+Average time in long trade: 2.6979876576334854
+Average time in short trade: 2.3934253503318934
+
+
+Win rate 8.00_sigma: 84.08741742203102 %
+Percentage of periods betting up 8.00_sigma : 4.86005255627 %
+Percentage of periods betting down: 8.00_sigma  14.596990639 %
+Percentage of periods staying out of the market: 8.00_sigma  80.5429568047 %
+
+There were 52077.0 total trades for 8.00_sigma.
+The annualised_sharpe for 8.00_sigma. is: 3.12.
+The CAGR for 8.00_sigma. is: 15.89 percent.
+The annualised_sharpe for 8.00_sigma. after commissions is: -0.57.
+The CAGR for 8.00_sigma. is: -2.75 percent. after commissions
+Average winning trade: 0.0002465377057530437
+Average losing trade: -0.0010897472065418067
+Average trade: 3.390026560718535e-05
+Average long trade: 2.1437873168467887e-05
+Average short trade: 3.801026448234745e-05
+Average time in long trade: 2.7147770135345017
+Average time in short trade: 2.422111480251015
+
+
+Win rate 20.00_sigma: 78.35736129314111 %
+Percentage of periods betting up 20.00_sigma : 3.60833419057 %
+Percentage of periods betting down: 20.00_sigma  5.3178158286 %
+Percentage of periods staying out of the market: 20.00_sigma  91.0738499808 %
+
+There were 22892.0 total trades for 20.00_sigma.
+The annualised_sharpe for 20.00_sigma. is: 2.26.
+The CAGR for 20.00_sigma. is: 10.04 percent.
+The annualised_sharpe for 20.00_sigma. after commissions is: 0.46.
+The CAGR for 20.00_sigma. is: 1.88 percent. after commissions
+Average winning trade: 0.000425777645645023
+Average losing trade: -0.0013097899698085401
+Average trade: 5.015501711916212e-05
+Average long trade: 2.6833439830005125e-05
+Average short trade: 6.518336110506286e-05
+Average time in long trade: 2.81397701813977
+Average time in short trade: 2.641657696447793
+
+
+Win rate 50.00_sigma: 70.55231751318345 %
+Percentage of periods betting up 50.00_sigma : 1.9998503736 %
+Percentage of periods betting down: 50.00_sigma  1.12500350687 %
+Percentage of periods staying out of the market: 50.00_sigma  96.8751461195 %
+
+There were 7208.0 total trades for 50.00_sigma.
+The annualised_sharpe for 50.00_sigma. is: 1.52.
+The CAGR for 50.00_sigma. is: 5.27 percent.
+The annualised_sharpe for 50.00_sigma. after commissions is: 0.81.
+The CAGR for 50.00_sigma. is: 2.74 percent. after commissions
+Average winning trade: 0.0007895815284358871
+Average losing trade: -0.0016010215373393514
+Average trade: 8.560432810629244e-05
+Average long trade: 5.776776021246738e-05
+Average short trade: 0.0001309225042835481
+Average time in long trade: 2.963235294117647
+Average time in short trade: 2.8467813051146384
+
+
+Win rate 100.00_sigma: 63.13485113835377 %
+Percentage of periods betting up 100.00_sigma : 0.759821570516 %
+Percentage of periods betting down: 100.00_sigma  0.304396210711 %
+Percentage of periods staying out of the market: 100.00_sigma  98.9357822188 %
+
+There were 2284.0 total trades for 100.00_sigma.
+The annualised_sharpe for 100.00_sigma. is: 0.94.
+The CAGR for 100.00_sigma. is: 2.37 percent.
+The annualised_sharpe for 100.00_sigma. after commissions is: 0.64.
+The CAGR for 100.00_sigma. is: 1.59 percent. after commissions
+Average winning trade: 0.0012201312789668762
+Average losing trade: -0.0017546865558491472
+Average trade: 0.0001234602557991478
+Average long trade: 8.761584969294925e-05
+Average short trade: 0.00021395631812899473
+Average time in long trade: 3.123046875
+Average time in short trade: 3.0643967431532197
+
+
+Win rate 150.00_sigma: 56.235827664399096 %
+Percentage of periods betting up 150.00_sigma : 0.287095658029 %
+Percentage of periods betting down: 150.00_sigma  0.114090131204 %
+Percentage of periods staying out of the market: 150.00_sigma  99.5988142108 %
+
+There were 882.0 total trades for 150.00_sigma.
+The annualised_sharpe for 150.00_sigma. is: 0.42.
+The CAGR for 150.00_sigma. is: 0.77 percent.
+The annualised_sharpe for 150.00_sigma. after commissions is: 0.26.
+The CAGR for 150.00_sigma. is: 0.48 percent. after commissions
+Average winning trade: 0.0016009831928749895
+Average losing trade: -0.0018150468315714953
+Average trade: 0.0001059859259403601
+Average long trade: 1.1693042355933803e-05
+Average short trade: 0.00035821938952870037
+Average time in long trade: 3.2532998114393465
+Average time in short trade: 3.1266294227188083
+
+
+Win rate 200.00_sigma: 59.5 %
+Percentage of periods betting up 200.00_sigma : 0.123909363807 %
+Percentage of periods betting down: 200.00_sigma  0.0514340755426 %
+Percentage of periods staying out of the market: 200.00_sigma  99.8246565607 %
+
+There were 400.0 total trades for 200.00_sigma.
+The annualised_sharpe for 200.00_sigma. is: 0.78.
+The CAGR for 200.00_sigma. is: 1.03 percent.
+The annualised_sharpe for 200.00_sigma. after commissions is: 0.68.
+The CAGR for 200.00_sigma. is: 0.90 percent. after commissions
+Average winning trade: 0.0018228825431276107
+Average losing trade: -0.0019179357204703886
+Average trade: 0.0003078511463704209
+Average long trade: 0.00022686376375029331
+Average short trade: 0.0005383536969046301
+Average time in long trade: 3.2888888888888888
+Average time in short trade: 3.1596638655462184
+
+
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 2  x std: 
+Win rate 0.00_sigma: 74.03100775193798 %
+Percentage of periods betting up 0.00_sigma : 0.114090131204 %
+Percentage of periods betting down: 0.00_sigma  0.519016580476 %
+Percentage of periods staying out of the market: 0.00_sigma  99.3668932883 %
+
+There were 2064.0 total trades for 0.00_sigma.
+The annualised_sharpe for 0.00_sigma. is: 0.69.
+The CAGR for 0.00_sigma. is: 1.03 percent.
+The annualised_sharpe for 0.00_sigma. after commissions is: 0.23.
+The CAGR for 0.00_sigma. is: 0.33 percent. after commissions
+Average winning trade: 0.0004483209222476384
+Average losing trade: -0.0010485256248574473
+Average trade: 5.960495846453473e-05
+Average long trade: -2.771800821481003e-06
+Average short trade: 7.113499089283385e-05
+Average time in long trade: 3.261203585147247
+Average time in short trade: 2.773959526536846
+
+
+Win rate 4.00_sigma: 74.03100775193798 %
+Percentage of periods betting up 4.00_sigma : 0.114090131204 %
+Percentage of periods betting down: 4.00_sigma  0.519016580476 %
+Percentage of periods staying out of the market: 4.00_sigma  99.3668932883 %
+
+There were 2064.0 total trades for 4.00_sigma.
+The annualised_sharpe for 4.00_sigma. is: 0.69.
+The CAGR for 4.00_sigma. is: 1.03 percent.
+The annualised_sharpe for 4.00_sigma. after commissions is: 0.23.
+The CAGR for 4.00_sigma. is: 0.33 percent. after commissions
+Average winning trade: 0.0004483209222476384
+Average losing trade: -0.0010485256248574473
+Average trade: 5.960495846453473e-05
+Average long trade: -2.771800821481003e-06
+Average short trade: 7.113499089283385e-05
+Average time in long trade: 3.261203585147247
+Average time in short trade: 2.773959526536846
+
+
+Win rate 8.00_sigma: 74.03100775193798 %
+Percentage of periods betting up 8.00_sigma : 0.114090131204 %
+Percentage of periods betting down: 8.00_sigma  0.519016580476 %
+Percentage of periods staying out of the market: 8.00_sigma  99.3668932883 %
+
+There were 2064.0 total trades for 8.00_sigma.
+The annualised_sharpe for 8.00_sigma. is: 0.69.
+The CAGR for 8.00_sigma. is: 1.03 percent.
+The annualised_sharpe for 8.00_sigma. after commissions is: 0.23.
+The CAGR for 8.00_sigma. is: 0.33 percent. after commissions
+Average winning trade: 0.0004483209222476384
+Average losing trade: -0.0010485256248574473
+Average trade: 5.960495846453473e-05
+Average long trade: -2.771800821481003e-06
+Average short trade: 7.113499089283385e-05
+Average time in long trade: 3.261203585147247
+Average time in short trade: 2.773959526536846
+
+
+Win rate 20.00_sigma: 69.2410119840213 %
+Percentage of periods betting up 20.00_sigma : 0.114090131204 %
+Percentage of periods betting down: 20.00_sigma  0.357700616274 %
+Percentage of periods staying out of the market: 20.00_sigma  99.5282092525 %
+
+There were 1502.0 total trades for 20.00_sigma.
+The annualised_sharpe for 20.00_sigma. is: 0.41.
+The CAGR for 20.00_sigma. is: 0.60 percent.
+The annualised_sharpe for 20.00_sigma. after commissions is: 0.07.
+The CAGR for 20.00_sigma. is: 0.10 percent. after commissions
+Average winning trade: 0.0005838520350621631
+Average losing trade: -0.0011571967649888018
+Average trade: 4.8323043302145925e-05
+Average long trade: -2.771800821481003e-06
+Average short trade: 6.226587364774581e-05
+Average time in long trade: 3.261203585147247
+Average time in short trade: 2.87467498699948
+
+
+Win rate 50.00_sigma: 58.55614973262032 %
+Percentage of periods betting up 50.00_sigma : 0.113154966194 %
+Percentage of periods betting down: 50.00_sigma  0.151496731598 %
+Percentage of periods staying out of the market: 50.00_sigma  99.7353483022 %
+
+There were 748.0 total trades for 50.00_sigma.
+The annualised_sharpe for 50.00_sigma. is: 0.10.
+The CAGR for 50.00_sigma. is: 0.13 percent.
+The annualised_sharpe for 50.00_sigma. after commissions is: -0.08.
+The CAGR for 50.00_sigma. is: -0.12 percent. after commissions
+Average winning trade: 0.0010139936131552487
+Average losing trade: -0.0013792388169984648
+Average trade: 2.2145948251971748e-05
+Average long trade: -6.736435475796083e-06
+Average short trade: 4.350547854366982e-05
+Average time in long trade: 3.2670089858793325
+Average time in short trade: 3.103057757644394
+
+
+Win rate 100.00_sigma: 52.67857142857143 %
+Percentage of periods betting up 100.00_sigma : 0.100062656056 %
+Percentage of periods betting down: 100.00_sigma  0.0729428707695 %
+Percentage of periods staying out of the market: 100.00_sigma  99.8269944732 %
+
+There were 448.0 total trades for 100.00_sigma.
+The annualised_sharpe for 100.00_sigma. is: -0.08.
+The CAGR for 100.00_sigma. is: -0.11 percent.
+The annualised_sharpe for 100.00_sigma. after commissions is: -0.20.
+The CAGR for 100.00_sigma. is: -0.26 percent. after commissions
+Average winning trade: 0.0013156195241075459
+Average losing trade: -0.0015225660069053955
+Average trade: -2.7450414675363783e-05
+Average long trade: 1.7595644327770392e-05
+Average short trade: -9.838501333547162e-05
+Average time in long trade: 3.285507246376812
+Average time in short trade: 3.243498817966903
+
+
+Win rate 150.00_sigma: 51.09489051094891 %
+Percentage of periods betting up 150.00_sigma : 0.063123638166 %
+Percentage of periods betting down: 150.00_sigma  0.0378741828996 %
+Percentage of periods staying out of the market: 150.00_sigma  99.8990021789 %
+
+There were 274.0 total trades for 150.00_sigma.
+The annualised_sharpe for 150.00_sigma. is: -0.14.
+The CAGR for 150.00_sigma. is: -0.16 percent.
+The annualised_sharpe for 150.00_sigma. after commissions is: -0.22.
+The CAGR for 150.00_sigma. is: -0.26 percent. after commissions
+Average winning trade: 0.0015153463139103802
+Average losing trade: -0.0017235423984324105
+Average trade: -6.86357570893788e-05
+Average long trade: 4.535080896393223e-05
+Average short trade: -0.0002799858483132263
+Average time in long trade: 3.3063829787234043
+Average time in short trade: 3.292181069958848
+
+
+Win rate 200.00_sigma: 59.154929577464785 %
+Percentage of periods betting up 200.00_sigma : 0.0313280278305 %
+Percentage of periods betting down: 200.00_sigma  0.0196384652072 %
+Percentage of periods staying out of the market: 200.00_sigma  99.949033507 %
+
+There were 142.0 total trades for 200.00_sigma.
+The annualised_sharpe for 200.00_sigma. is: 0.53.
+The CAGR for 200.00_sigma. is: 0.42 percent.
+The annualised_sharpe for 200.00_sigma. after commissions is: 0.47.
+The CAGR for 200.00_sigma. is: 0.37 percent. after commissions
+Average winning trade: 0.0016851611572178298
+Average losing trade: -0.001582174680480543
+Average trade: 0.0003506155333691987
+Average long trade: 0.0005568137008974133
+Average short trade: -0.00010864402158000663
+Average time in long trade: 3.254980079681275
+Average time in short trade: 3.289473684210526
+
+
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 4  x std: 
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 8  x std: 
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 16  x std: 
+>FOR MODEL: LGS1-EPCHS100-BTCH1024-NRNS100-LAY3-BL1_0.00,L2_0.00-KL1_0.00,L2_0.00-RL1_0.00,L2_0.00-LR0.0010-LRD0.0000-DO0.50-PTTnan-POUT6
+return > 32  x std: 
+>Saved model to disk
+[Finished in 1386.0s]

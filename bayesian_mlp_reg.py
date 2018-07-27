@@ -21,7 +21,6 @@ from keras import layers
 from keras import backend as K
 from keras.callbacks import TensorBoard
 import os 
-# from keras import regularizers
 # np.random.seed(777)
 
 
@@ -102,8 +101,8 @@ def fit_model(model, train_X, train_y, val_X, val_y, batch, n_epochs, n_neurons,
     """
     n_obs = n_features*(lags)
 
-    # tb = TensorBoard(log_dir='./Graph', histogram_freq=0,  
-    #       write_graph=True, write_images=True)
+    tb = TensorBoard(log_dir='./Graph', histogram_freq=0,  
+          write_graph=True, write_images=True)
 
     neuron_decay_factor_per_layer = 1 #0.75
 
@@ -134,8 +133,8 @@ def fit_model(model, train_X, train_y, val_X, val_y, batch, n_epochs, n_neurons,
     history = model.fit(train_X, train_y, epochs=n_epochs,
                   validation_data=(val_X, val_y),
                   batch_size=batch, 
-                  verbose=2, shuffle=False, 
-                 # callbacks= [tb]#[EarlyStopping(monitor='val_loss', patience=100, verbose=2, mode='auto')]
+                  verbose=2, shuffle=True, 
+                 callbacks= [tb]#[EarlyStopping(monitor='val_loss', patience=100, verbose=2, mode='auto')]
                     )
     return model, history    
 
@@ -218,7 +217,7 @@ def out_of_sample_test(test_X, test_y, periodic_return, low_return, high_return,
 
     if mc_dropout == True:
         ### MC Dropout
-        T = 20
+        T = 100
         # We want to use Dropout at test time, not just at training time as usual.
         # To do this we tell Keras to predict with learning_phase set to true.  
         predict_stochastic = K.function([model.layers[0].input, K.learning_phase()], [model.layers[-1].output])
