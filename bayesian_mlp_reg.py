@@ -251,7 +251,6 @@ def out_of_sample_test(test_X, test_y, periodic_return, low_return, high_return,
     output_df['low_return'] = pd.Series(low_return)
     output_df['high_return'] = pd.Series(high_return)
 
-
     # return dataset_returns with OOS predictions
     return output_df
 def equity_curve(dataset, m, periods_in_year, plot, threshold, profit_taking_threshold, bayesian_threshold, p_out):
@@ -434,10 +433,12 @@ def equity_curve(dataset, m, periods_in_year, plot, threshold, profit_taking_thr
                 print('Average short trade: ' + \
                     str(dataset['short_trade_return_%.2f_sigma' %i][dataset['short_trade_return_%.2f_sigma' %i]!=0].mean()))
                 print('Average time in long trade: ' + \
-                    str((dataset['time_in_long_%.2f_sigma' %i][dataset['time_in_long_%.2f_sigma' %i]!=0]).mean()))
-                print('Average time in short trade: ' + \
-                    str((dataset['time_in_short_%.2f_sigma' %i][dataset['time_in_short_%.2f_sigma' %i]!=0]).mean()))
+                    str((dataset['time_in_long_%.2f_sigma' %i][(dataset['profit_taking_long_%.2f_sigma' %i]==1) |\
+                     (dataset['time_in_long_%.2f_sigma' %i] == p_out) & (dataset['time_in_long_%.2f_sigma' %i] >0 )]).mean()))
 
+                print('Average time in short trade: ' + \
+                    str((dataset['time_in_short_%.2f_sigma' %i][(dataset['profit_taking_short_%.2f_sigma' %i]==1) |\
+                     (dataset['time_in_short_%.2f_sigma' %i] == p_out)  & (dataset['time_in_short_%.2f_sigma' %i] >0 )]).mean()))
                 print("\n")
 
                 if plot:
